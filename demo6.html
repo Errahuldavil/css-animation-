@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box  ;
+        }
+        .outer{
+            height: 300px;
+            margin: auto;
+            width: 1000px;
+            /* border: 1px solid black; */
+
+        }
+        .door1{
+            height: 100%;
+            width: 15%;
+            /* border: 1px solid black; */
+            float: left;
+            background-image: url(bathroom.jpg);
+        }
+        .doortop{
+            height: 20%;
+            width: 100%;
+            border: 1px solid black;
+            background-image: url(khidki.png);
+            background-size: 100% 100%;
+            
+        }
+        .doorbottom{
+            height: 80%;
+            width: 100%;
+            /* border: 1px solid black; */
+            
+            transition: all 3s;
+
+        }
+        .doorbottom:hover{
+            transform:perspective(2000px)rotateY(-80deg);
+            transform-origin: bottom right;
+            
+        }
+        .wall{
+            height: 100%;
+            width: 25%;
+            /* border: 1px solid black; */
+            float: left;
+            background-color: rgb(243, 243, 205);
+        }
+        .window{
+            height: 100%;
+            width: 30%;
+            /* border: 1px solid black; */
+            float: left;
+        }
+        .window1{
+            height: 20%;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-image: url(khidki.png);
+            background-size: cover;
+        }
+        .w1{
+            height: 100%;
+            width: 50%;
+            border: 5px groove grey;
+            float: left;
+            background: rgba(0,0,0,0.7);
+            transition: all 3s;
+        }
+        .w1:hover{
+            transform: perspective(2000px)rotateX(50deg);
+            transform-origin: top left;
+        }
+        .w2{
+            height: 100%;
+            width: 50%;
+            background: rgba(0,0,0,0.7);
+            float: left;
+            border: 5px groove black;
+            transition: all 3s;
+        }
+        .w2:hover{
+            transform: perspective(2000px)rotateX(50deg);
+            transform-origin: top left;
+            transition: all  3s;
+        }
+        .window2{
+            height: 60%;
+            width: 100%;
+            border: 3px solid gray;
+            background-image: url(grill.jpg);
+            background-size: 100% 100%;
+        }
+        .k1{
+            height: 100%;
+            width: 25%;
+            border: 5px groove white;
+            float: left;
+            background: rgba(0,0,0,1);
+            transition: all 3s;
+        }
+        .k1:hover{
+            transform: perspective(2000px)rotateY(-80deg);
+            transform-origin: bottom left;
+        }
+        .k2{
+            height: 100%;
+            width: 25%;
+            /* border: 1px solid black; */
+            border: 5px groove white;
+            float: left;
+            background: rgba(0,0,0,1);
+            transition: all 3s;
+        }
+        .k2:hover{
+            transform: perspective(2000px)rotateY(80deg);
+            transform-origin: bottom right;
+        }
+        .k3{
+            height: 100%;
+            width: 25%;
+            border: 5px groove white;
+            background: rgba(0,0,0,1);
+            float: left;
+            transition: all 3s;
+        }
+        .k3:hover{
+            transform: perspective(2000px)rotateY(-80deg);
+            transform-origin: bottom left;
+        }
+        .k4{
+            height: 100%;
+            width: 25%;
+            border: 5px groove white;
+            background: rgba(0,0,0,1);
+            float: left;
+            transition: all 3s ;
+        }
+        .k4:hover{
+            transform: perspective(2000px)rotateY(80deg);
+            transform-origin: bottom right;
+        }
+        .window3{
+            height: 20%;
+            width: 100%;
+            /* border: 1px solid black; */
+            background-color: rgb(243, 243, 205);
+        }
+        .door2{
+            height: 100%;
+            width: 30%;
+            border: 1px solid black;
+            float: left;
+            /* background-image: url(hall.png); */
+            background-image: url(kichen.gif);
+            background-size: 100% 100%;
+        }
+        .doorup{
+            height: 20%;
+            width: 100%;
+            border: 1px solid black;
+            background-image: url(khidki.png);
+            background-size: 100% 100%;
+            /* background: rgba(0,0,0,0.7); */
+        }
+        .doordown{
+            height: 80%;
+            width: 100%;
+            border: 1px solid black;
+            background-image: url(door2.jpg);
+            background-size: cover;
+            transition: all 3s;
+        }
+        .doordown:hover{
+            transform: perspective(2000px)rotateY(125deg);
+            transform-origin: bottom right;
+        }
+        .dr{
+            /* background-size: 100% 100%;
+            height: 300px;
+            margin-top: -46px;
+            margin-left: -70px;
+            width: 200%; */
+            background-size: cover;
+            margin-left: -136px;
+            width: 400px;
+            margin-top: -52px;
+            height: 310px;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="outer">
+        <div class="door1">
+            <div class="doortop"></div>
+            <div class="doorbottom">
+                <img class="dr" src="door1.png" alt="">
+            </div>
+        </div>
+        <div class="wall">
+            <img src="boared.png" style="height: 80px;margin-top: 100px;" alt="">
+            <img src="mir.png" style="height: 100px;margin-left: 50px;" alt="">
+        </div>
+        <div class="window">
+            <div class="window1">
+                        <div class="w1"></div>  
+                        <div class="w2"></div>  
+            </div>
+            <div class="window2">
+                <div class="k1"></div>
+                <div class="k2"></div>
+                <div class="k3"></div>
+                <div class="k4"></div>
+            </div>
+            <div class="window3"></div>
+        </div>
+        <div class="door2">
+            
+            <div class="doorup"></div>
+            <div class="doordown">
+                <!-- <img src="door2.jpg" alt=""> -->
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
